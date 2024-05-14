@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Table Records</title>
+</head>
+<body>
+    <h1>Records</h1>
+    <ul>
+        {% for record in table %}
+        <li>{{ record.Nome }} - {{ record.Apelido }} - {{ record.Departamento }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

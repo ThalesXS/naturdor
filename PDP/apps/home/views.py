@@ -8,14 +8,14 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
-from .models import MyTable
+from .models import Collaborators
 
 
 @login_required(login_url="/login/")
 def index(request):
     context = {
         'segment': 'index',
-        'table' : MyTable.objects.all()
+        'table' : Collaborators.objects.all()
 }
 
     html_template = loader.get_template('home/index.html')

@@ -4,7 +4,7 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from django.contrib import admin
-from .models import MyTable
+from .models import Collaborators
 
 # Register your models here.
-admin.site.register(MyTable)
+admin.site.register(Collaborators)

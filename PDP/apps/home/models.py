@@ -9,7 +9,7 @@ from django.utils import timezone
 
 # Create your models here.
 
-class MyTable(models.Model):
+class Collaborators(models.Model):
     Nome = models.CharField(max_length=100, default="N/A")
     Apelido = models.CharField(max_length=100, default="N/A")
     Departamento = models.CharField(max_length=100, default="N/A")
@@ -31,4 +31,6 @@ class Avaliação(models.Model):
     processCode = models.CharField(max_length=10, default="TI-03-2024")
     numAvaliador = models.IntegerField(default=0)
     grupoAvaliação = []
+    avalTerminadas = []
+    
     
